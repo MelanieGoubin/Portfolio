@@ -1,0 +1,112 @@
+/*
+Theme Name: Inspiro Child
+Description: Thème enfant Inspiro pour mon portfolio
+Author: Mélanie
+Template: inspiro
+Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+
+/* ===== TYPOGRAPHIE DU SITE ===== */
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: 'EB Garamond', serif;
+}
+
+/* ===== MENU EN GARAMOND ===== */
+
+.main-navigation a,
+.navbar-nav a,
+.site-navigation a,
+.menu-item a {
+    font-family: 'EB Garamond', serif !important;
+    font-weight: 400 !important;
+}
+
+/* ===== ICÔNE HOME ===== */
+
+#menu-portfolio-1 .menu-item-home > a::before {
+    content: "⌂";
+    margin-right: 7px;
+    font-size: 0.9em;
+}
+
+/* ===== HERO ACCUEIL ===== */
+
+.home .site-title,
+.home .custom-header .entry-title,
+.home .custom-header .page-title,
+.home .custom-header h1 {
+    font-family: 'EB Garamond', serif !important;
+    font-weight: 700 !important;
+    font-size: 64px !important;
+}
+
+.home .custom-header .site-description,
+.home .custom-header .entry-content,
+.home .custom-header .header-description {
+    font-family: 'EB Garamond', serif !important;
+    font-size: 26px !important;
+    font-weight: 400 !important;
+}
+
+/* Vague chocolat de la section À propos */
+#apropos {
+    background-image: url("images/Vague Chocolat.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center 20% !important;
+    background-size: 100% auto !important;
+}
+
+.apropos::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 260px;
+
+    background-image: url("images/Vague Chocolat.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+.apropos-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Animation des cartes projets au survol */
+.carte-projet {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte-projet:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+body,
+button,
+input,
+textarea,
+select,
+h1, h2, h3, h4, h5, h6,
+p,
+a,
+span,
+li {
+    font-family: "EB Garamond", serif !important;
+}

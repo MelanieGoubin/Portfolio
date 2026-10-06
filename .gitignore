@@ -1,0 +1,17 @@
+# Fichiers sensibles WordPress
+wp-config.php
+
+# Fichiers temporaires / logs
+*.log
+.DS_Store
+Thumbs.db
+
+# Cache
+wp-content/cache/
+
+# Sauvegardes
+*.zip
+*.sql
+
+# Fichiers de l'éditeur
+.vscode/
