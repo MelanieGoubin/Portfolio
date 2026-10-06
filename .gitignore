@@ -15,3 +15,23 @@ wp-content/cache/
 
 # Fichiers de l'éditeur
 .vscode/
+
+# WordPress - fichiers inutiles sur GitHub
+wp-admin/
+wp-includes/
+
+# Thèmes WordPress sauf mon thème enfant
+wp-content/themes/*
+!wp-content/themes/inspiro-child/
+
+# Extensions
+wp-content/plugins/
+
+# Fichiers envoyés dans WordPress
+wp-content/uploads/
+
+# Fichiers système WordPress à la racine
+wp-*.php
+xmlrpc.php
+license.txt
+readme.html
